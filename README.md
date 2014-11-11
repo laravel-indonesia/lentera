@@ -1,4 +1,4 @@
 Lentera
 =======
 
-Learning Mangement from Nusantara built with Laravel
+Learning Management from Nusantara built with Laravel
