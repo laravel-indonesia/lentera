@@ -1,0 +1,119 @@
+extends _includes/_layout
+
+block title
+  title Lentera
+
+block content
+  include components/main-navigation
+
+  .page--home2#content-wrapper
+    .scenes#scenes
+      section.scene.scene-masthead#scene-masthead
+        .bg.bg-masthead#bg-masthead(data-interchange='[../assets/images/empty.png, (default)],[../assets/images/scene/bg-masthead-md.jpg, (mobileDevice)],[../assets/images/scene/bg-masthead-lg.jpg, (largeDevice)],[../assets/images/scene/bg-masthead-xl.jpg, (xxLargeDevice)]')
+        .biker-wrap#biker(data-interchange='[../assets/images/empty.png, (default)], [../assets/images/empty.png, (mobileDevice)], [../assets/images/bike1-large.png, (xxLargeDevice)]')
+        .container.container-scene-masthead-textual#container-scene-masthead
+          .item-text.mast-title#masthead-text
+            h1#home-title.heading.heading-default.
+              Rasakan Energi Yang <strong>Sesungguhnya</strong>
+            p#home-caption.p-caption.item-parallax.
+              Karena kami percaya pada energi <strong>Nyata</strong> yang bisa mengubahmu jadi <strong>Luar Biasa</strong>.
+
+        include _patterns/masthead-shortcut.jade
+
+      section.scene.scene-highlight#scene-highlight
+        .bg-default
+        .bg(data-interchange='[../assets/images/empty.png, (default)],[../assets/images/scene/bg-highlight-md.jpg, (mobileDevice)],[../assets/images/scene/bg-highlight-lg.jpg, (largeDevice)],[../assets/images/scene/bg-highlight-xl.jpg, (xxLargeDevice)]')
+        .item-wrap
+          include _patterns/article-block-algorithmic
+
+      section.scene.scene-product#scene-product
+        .bg-default
+        .bg(data-interchange='[../assets/images/empty.png, (default)],[../assets/images/scene/bg-product-md.jpg, (mobileDevice)],[../assets/images/scene/bg-product-lg.jpg, (largeDevice)],[../assets/images/scene/bg-product-xl.jpg, (xxLargeDevice)]')
+        .container.container-scene
+          .item-wrap
+            .item-text.scene-product-title-wrapper
+              h1.heading.heading-default.scene-product-title#scene-product-title
+                span.line Satu Botol
+                span.line Untuk Setiap <strong>Energi Ekstra</strong>
+                span.line Yang Kamu Butuhkan
+              a.btn.btn-bar-small.roll-bar.scene-product-cta#scene-product-cta
+                span(data-title='Ini alasan Kratingdaeng berbeda') Ini alasan Kratingdaeng berbeda
+                i.fa.fa-angle-double-right
+
+            .item.splash-composite#splash-composite
+              img(data-interchange="[../assets/images/product-splash-medium.png, (default)], [../assets/images/empty.png, (largeDevice)], [../assets/images/empty.png, (xxLargeDevice)]")
+
+            .item.splash-product-water#splash-product-water
+              img(data-interchange="[../assets/images/empty.png, (default)], [../assets/images/product/splash-product-water.png, (largeDevice)], [../assets/images/product/splash-product-water-2x.png, (xxLargeDevice)]")
+
+            .item.splash-product#splash-product
+              img(data-interchange="[../assets/images/empty.png, (default)], [../assets/images/product/splash-product.png, (largeDevice)], [../assets/images/product/splash-product-2x.png, (xxLargeDevice)]")
+
+            .item.splash-talent-water#splash-talent-water
+              img(data-interchange="[../assets/images/empty.png, (default)], [../assets/images/product/splash-talent-water.png, (largeDevice)], [../assets/images/product/splash-talent-water-2x.png, (xxLargeDevice)]")
+
+            .item.splash-talent-guitar#splash-talent-guitar
+              img(data-interchange="[../assets/images/empty.png, (default)], [../assets/images/product/splash-talent-guitar.png, (largeDevice)], [../assets/images/product/splash-talent-guitar-2x.png, (xxLargeDevice)]")
+
+            .item.splash-talent-skater#splash-talent-skater
+              img(data-interchange="[../assets/images/empty.png, (default)], [../assets/images/product/splash-talent-skater.png, (largeDevice)], [../assets/images/product/splash-talent-skater-2x.png, (xxLargeDevice)]")
+
+            .item.splash-talent-soccer#splash-talent-soccer
+              img(data-interchange="[../assets/images/empty.png, (default)], [../assets/images/product/splash-talent-soccer.png, (largeDevice)], [../assets/images/product/splash-talent-soccer-2x.png, (xxLargeDevice)]")
+
+            .item.splash-talent-student#splash-talent-student
+              img(data-interchange="[../assets/images/empty.png, (default)], [../assets/images/product/splash-talent-student.png, (largeDevice)], [../assets/images/product/splash-talent-student-2x.png, (xxLargeDevice)]")
+
+            .item.splash-talent-businesswoman#splash-talent-businesswoman
+              img(data-interchange="[../assets/images/empty.png, (default)], [../assets/images/product/splash-talent-businesswoman.png, (largeDevice)], [../assets/images/product/splash-talent-businesswoman-2x.png, (xxLargeDevice)]")
+
+            .item.splash-overlay
+              .energy-bubble.energy-bubble-guitar
+              .energy-bubble.energy-bubble-skater
+              .energy-bubble.energy-bubble-soccer
+              .energy-bubble.energy-bubble-student
+              .energy-bubble.energy-bubble-businesswoman
+
+
+      section.scene.scene-faq#scene-faq
+        .bg-default
+        .bg(data-interchange='[../assets/images/empty.png, (default)],[../assets/images/scene/bg-faq-md.jpg, (mobileDevice)],[../assets/images/scene/bg-faq-lg.jpg, (largeDevice)],[../assets/images/scene/bg-faq-xl.jpg, (xxLargeDevice)]')
+        .container.container-scene
+          .item-wrap
+            .item.girl#girl
+              img(data-interchange="[../assets/images/empty.png, (default)], [../assets/images/girl-large.png, (largeDevice)], [../assets/images/girl-large.png, (xxLargeDevice)]")
+            .item-text.scene-faq-title#scene-faq-title
+              h1.heading.heading-light.text-right
+                span.line Apa Keuntungan
+                span.line <strong>Kratingdaeng?</strong>
+            .item.panel.panel-kra.scene-faq-panel#scene-faq-panel
+              h2.heading.heading-light.heading-with-icon
+                span.icon.icon-bull
+                | Ini Faktanya: Kratingdaeng punya energi
+              h3.heading.heading-default.heading-twolines
+                strong.standout 20 kali
+                .twolines
+                  span.line <strong>lebih banyak dari</strong>
+                  span.line minuman sachet yang sejenis
+              a.btn.btn-bar-small.roll-bar(href='#')
+                span(data-title='Punya pertanyaan lain?') Punya pertanyaan lain?
+                i.fa.fa-angle-double-right
+
+      section.scene.scene-about#scene-about
+        .bg-default
+        .bg(data-interchange='[../assets/images/empty.png, (default)],[../assets/images/scene/bg-about-md.jpg, (mobileDevice)],[../assets/images/scene/bg-about-lg.jpg, (largeDevice)],[../assets/images/scene/bg-about-xl.jpg, (xxLargeDevice)]')
+        .bg-grid#bg-grid
+        .bg-runner#runner(data-interchange="[../assets/images/empty.png, (default)], [../assets/images/runner-large.png, (largeDevice)], [../assets/images/runner-xxlarge.png, (xxLargeDevice)]")
+        .container.container-scene
+          .item-wrap
+            .item-text
+              h1.heading.heading-default.scene-about-title#scene-about-title
+                <strong>Kenali Cerita</strong> Di Balik <br>Minuman Energimu
+
+              a.btn.btn-bar.roll-bar.scene-about-cta#scene-about-cta(href="#")
+                span(data-title='Lihat selengkapnya di sini') Lihat selengkapnya di sini
+                i.fa.fa-angle-double-right
+            .item.scene-about-map
+              img.map-milestone#map-milestone(src="../assets/images/maps.png")
+
+  include _patterns/footer

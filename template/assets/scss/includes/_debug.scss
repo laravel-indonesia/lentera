@@ -1,0 +1,63 @@
+body.debug:after {
+  color: #dadada;
+  background-color: #f00;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99999999;
+
+  position: fixed;
+  content: "default";
+}
+
+/* max-width 640px, mobile-only styles */
+@media #{$small-up} {
+  body.debug:after {
+    position: fixed;
+    content: "small";
+  }  
+}
+@media #{$small-only} {
+  
+}
+
+/* min-width 641px and max-width 1024px */
+@media #{$medium-up} {
+  body.debug:after {
+    position: fixed;
+    content: "medium";
+  }
+}
+@media #{$medium-only} {
+  
+}
+
+/* min-width 1025px and max-width 1440px */
+@media #{$large-up} {
+  body.debug:after {
+    position: fixed;
+    content: "large";
+  }
+}
+@media #{$large-only} {
+  
+}
+
+/* min-width 1441px and max-width 1920px */
+@media #{$xlarge-up} {
+  body.debug:after {
+    position: fixed;
+    content: "xlarge";
+  }
+}
+@media #{$xlarge-only} {
+  
+}
+
+/* min-width 1441px */
+@media #{$xxlarge-up} {
+  body.debug:after {
+    position: fixed;
+    content: "xxlarge";
+  }
+}

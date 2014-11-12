@@ -1,0 +1,44 @@
+@mixin breakpoint($point) {
+  @if $point == extra-small {
+    @media (min-width: 480px)  { @content; }
+  }
+  @else if $point == small {
+    @media (min-width: 768px)  { @content; }
+  }
+  @else if $point == small-only {
+    @media (min-width: 768px) and (max-width: 992px) { @content; }
+  }
+  @else if $point == medium {
+    @media (min-width: 992px) { @content; }
+  }
+  @elseif $point == large {
+    @media (min-width: 1200px) { @content; }
+  }
+  @elseif $point == extra-large {
+    @media (min-width: 1441px) { @content; }
+  }
+}
+
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// vertical-center using table display method
+@mixin vcenter ($inner: ".vc-inner") {
+  width: 100%;
+  display: table;
+
+  & > #{$inner} {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+@mixin ir() {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}

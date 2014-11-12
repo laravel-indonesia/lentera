@@ -1,0 +1,18 @@
+// Colors
+$red: #eb0f15;
+$dark-gray: #222;
+$light-gray: #b0b0b0;
+$white: #ffffff;
+$blue: #052578;
+
+//  Font Colors
+$base-font-color: $dark-gray;
+$accent-color: $red;
+$accent-color-hover: darken($accent-color, 10%);
+$accent-color-dark: darken($accent-color, 20%);
+$complement-color: $blue;
+$background-color: $white;
+
+// Font Families
+$proxima-regular: "Proxima N W01 Reg", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$proxima-bold: "Proxima N W01 Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
