@@ -2,6 +2,3 @@
 /node_modules
 /bower_components
 .env
-/.idea
-composer.lock
-composer.phar
