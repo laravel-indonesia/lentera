@@ -1,8 +1,8 @@
 <?php namespace App\Entities\Group;
 
-use App\Repositories\AbstractRepository;
+use App\Core\Repository\EloquentRepository;
 
-class GroupRepository extends AbstractRepository {
+class GroupRepository extends EloquentRepository {
 
 	/**
 	 * The model to execute queries on.
