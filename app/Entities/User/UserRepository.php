@@ -1,8 +1,8 @@
 <?php namespace App\Entities\User;
 
-use App\Repositories\AbstractRepository;
+use App\Core\Repository\EloquentRepository;
 
-class UserRepository extends AbstractRepository {
+class UserRepository extends EloquentRepository {
 
 	/**
 	 * The model to execute queries on.

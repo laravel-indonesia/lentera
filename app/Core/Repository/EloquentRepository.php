@@ -1,11 +1,8 @@
-<?php
-namespace App\Repositories;
-
+<?php namespace App\Core\Repository;
 
 use Illuminate\Database\Eloquent\Model;
 
-abstract class AbstractRepository
-{
+abstract class EloquentRepository  {
 
 		/**
 		 * The model to execute queries on.
