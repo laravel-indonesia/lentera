@@ -12,7 +12,7 @@ return [
 	| application. If disabled, a simple generic error page is shown.
 	|
 	*/
-
+	'name' => 'Lentera',
 	'debug' => env('APP_DEBUG'),
 
 	/*
@@ -135,6 +135,7 @@ return [
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Broadcasting\BroadcastServiceProvider',
+		'Illuminate\Notifications\NotificationServiceProvider',
 
 		/*
 		 * Application Service Providers...
@@ -142,6 +143,7 @@ return [
 		'App\Providers\AppServiceProvider',
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
+		'App\Providers\BroadcastServiceProvider',
 
 	],
 
@@ -190,7 +192,7 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
-
+		'Notification' => 'Illuminate\Support\Facades\Notification'
 	],
 
 ];
