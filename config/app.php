@@ -136,7 +136,7 @@ return [
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Broadcasting\BroadcastServiceProvider',
 		'Illuminate\Notifications\NotificationServiceProvider',
-
+		Laravel\Tinker\TinkerServiceProvider::class,
 		/*
 		 * Application Service Providers...
 		 */
@@ -192,7 +192,7 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
-		'Notification' => 'Illuminate\Support\Facades\Notification'
+		'Notification' => 'Illuminate\Support\Facades\Notification',
 	],
 
 ];

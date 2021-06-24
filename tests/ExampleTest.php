@@ -1,17 +1,22 @@
 <?php
 
-class ExampleTest extends TestCase {
+namespace Tests;
 
-	/**
-	 * A basic functional test example.
-	 *
-	 * @return void
-	 */
-	public function testBasicExample()
-	{
-		$response = $this->call('GET', '/');
+use Illuminate\Contracts\Console\Kernel;
 
-		$this->assertEquals(200, $response->getStatusCode());
-	}
+trait CreatesApplication
+{
+    /**
+     * Creates the application.
+     *
+     * @return \Illuminate\Foundation\Application
+     */
+    public function createApplication()
+    {
+        $app = require __DIR__.'/../bootstrap/app.php';
 
+        $app->make(Kernel::class)->bootstrap();
+
+        return $app;
+    }
 }
