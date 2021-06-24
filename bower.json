@@ -1,0 +1,13 @@
+{
+  "name": "lentera",
+  "version": "0.0.0",
+  "homepage": "https://github.com/laravel-indonesia/lentera",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
