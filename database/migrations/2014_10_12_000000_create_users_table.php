@@ -23,6 +23,7 @@ class CreateUsersTable extends Migration {
 			$table->timestamp('last_login')->nullable();
 			$table->timestamp('activation_token')->nullable();
 			$table->timestamp('activated_at')->nullable();
+			$table->timestamp('email_verified_at')->nullable();
 			$table->rememberToken();
 			$table->timestamps();
 			$table->softDeletes();
