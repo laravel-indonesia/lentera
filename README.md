@@ -9,3 +9,4 @@ Notable note <br><br>
 2.11 6/24/2021 Upgrade 5.3 -> 5.4 <br>
 install laravel/tinker
 2.36 6/24/2021 5.4 -> 5.5
+3.31 6/24/2021 5.5 -> 5.6

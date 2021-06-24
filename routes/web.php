@@ -11,6 +11,11 @@
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/root', function() {
+    return "test world";
 });
